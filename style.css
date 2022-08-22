@@ -1,0 +1,61 @@
+/* embeed font */
+/* font-family: 'Berkshire Swash', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+/* font-family: 'Manrope', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--bg-primary);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --bg-primary: #1f1c2a;
+  --bg-secondary: #242836;
+  --bg-secondary2: #c84b31;
+  --bg-accent: #ecdbba;
+}
+/* header */
+header {
+  background-color: var(--bg-primary);
+  height: 70vh;
+  position: relative;
+}
+header h1 {
+  font-family: "Berkshire Swash", cursive;
+  color: var(--bg-secondary2);
+}
+header .left_pic {
+  position: absolute;
+  left: 0%;
+  bottom: -4%;
+}
+header .right_pic {
+  position: absolute;
+  right: 0%;
+  bottom: -4%;
+}
+.five {
+  font-family: "Berkshire Swash", cursive;
+  color: var(--bg-accent);
+}
