@@ -8,6 +8,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,9 +30,21 @@ textarea,
 select {
   font: inherit;
 }
-
+input:focus {
+  outline: none;
+}
+li {
+  margin: 0.8rem 0;
+}
+input {
+  background-color: var(--bg-primary);
+  color: var(--bg-accent);
+  border: none;
+  padding: 0.4rem 0.2rem;
+  margin: 0.4rem;
+}
 :root {
-  --bg-primary: #1f1c2a;
+  --bg-primary: #211f29;
   --bg-secondary: #242836;
   --bg-secondary2: #c84b31;
   --bg-accent: #ecdbba;
@@ -40,10 +54,13 @@ header {
   background-color: var(--bg-primary);
   height: 70vh;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 header h1 {
   font-family: "Berkshire Swash", cursive;
   color: var(--bg-secondary2);
+  letter-spacing: 0.1rem;
 }
 header .left_pic {
   position: absolute;
@@ -57,5 +74,95 @@ header .right_pic {
 }
 .five {
   font-family: "Berkshire Swash", cursive;
+  color: var(--bg-accent);
+}
+
+.header-desc {
+  color: white;
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: -20% auto;
+}
+
+/* main */
+
+main {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-panel {
+  padding: 0.2rem;
+}
+.selection-panel {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 18rem;
+  background-color: var(--bg-secondary);
+}
+.card-desc {
+  color: white;
+  padding: 2px 16px;
+}
+
+.select-btn {
+  margin: 0.8rem;
+  padding: 0.4rem 4rem;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  /* padding: 0 3.4rem; */
+}
+
+.selection-container {
+  background-color: var(--bg-secondary);
+  height: 70%;
+  width: 100%;
+  padding: 2.4rem;
+  color: white;
+}
+.selection-container h4 {
+  margin: 0.6rem 0;
+}
+.calculation-container {
+  background-color: var(--bg-secondary);
+  height: 70%;
+  width: 100%;
+  padding: 2.4rem;
+  color: white;
+}
+/* calc insider */
+#plExp {
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+.calc-btn {
+  padding: 0.4rem 1.8rem;
+  background: var(--bg-secondary2);
+  color: white;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+hr {
+  opacity: 0.4;
+}
+
+footer p {
+  padding: 2.4rem 0;
+  text-align: center;
   color: var(--bg-accent);
 }
