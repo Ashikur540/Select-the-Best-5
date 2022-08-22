@@ -51,7 +51,7 @@ input {
 }
 /* header */
 header {
-  background-color: var(--bg-primary);
+  background-color: #121212;
   height: 70vh;
   position: relative;
   display: flex;
@@ -70,7 +70,7 @@ header .left_pic {
 header .right_pic {
   position: absolute;
   right: 0%;
-  bottom: -4%;
+  bottom: 0%;
 }
 .five {
   font-family: "Berkshire Swash", cursive;
