@@ -44,14 +44,14 @@ input {
   margin: 0.4rem;
 }
 :root {
-  --bg-primary: #211f29;
+  --bg-primary: #151518;
   --bg-secondary: #242836;
   --bg-secondary2: #c84b31;
   --bg-accent: #ecdbba;
 }
 /* header */
 header {
-  background-color: #121212;
+  background-color: var(--bg-primary);
   height: 70vh;
   position: relative;
   display: flex;
