@@ -35,6 +35,7 @@ input:focus {
 }
 li {
   margin: 0.8rem 0;
+  list-style-type: none;
 }
 input {
   background-color: var(--bg-primary);
@@ -129,15 +130,7 @@ main {
   border: none;
   cursor: pointer;
 }
-/* .select-btn-disabled {
-  margin: 0.8rem;
-  padding: 0.4rem 4rem;
-  background: var(--bg-secondary);
-  color: white;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-} */
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
