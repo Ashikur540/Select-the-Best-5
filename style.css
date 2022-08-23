@@ -62,6 +62,7 @@ header h1 {
   font-family: "Berkshire Swash", cursive;
   color: var(--bg-secondary2);
   letter-spacing: 0.1rem;
+  font-size: 3.4rem;
 }
 header .left_pic {
   position: absolute;
@@ -76,6 +77,7 @@ header .right_pic {
 .five {
   font-family: "Berkshire Swash", cursive;
   color: var(--bg-accent);
+ 
 }
 
 .header-desc {
