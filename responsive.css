@@ -1,0 +1,66 @@
+@import url(style.css);
+
+/* for tablet */
+
+@media (max-width: 992px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main {
+    flex-direction: column;
+  }
+  header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right_pic {
+    display: none;
+  }
+  .tagline {
+    font-size: 2rem;
+  }
+}
+/* for mobile */
+@media (min-width: 576px) and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .right_pic {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* for small device */
+
+@media (max-width: 576px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .right_pic {
+    display: none;
+  }
+  header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

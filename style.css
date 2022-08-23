@@ -56,13 +56,14 @@ header {
   height: 60vh;
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 header h1 {
   font-family: "Berkshire Swash", cursive;
   color: var(--bg-secondary2);
   letter-spacing: 0.1rem;
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 header .left_pic {
   position: absolute;
@@ -77,15 +78,15 @@ header .right_pic {
 .five {
   font-family: "Berkshire Swash", cursive;
   color: var(--bg-accent);
- 
 }
 
 .header-desc {
   color: white;
   display: block;
-  width: 50%;
+  width: 45%;
   text-align: center;
   margin: -20% auto;
+
 }
 
 /* main */
@@ -112,17 +113,17 @@ main {
   transition: 0.3s;
   width: 18rem;
   background-color: var(--bg-secondary);
+  margin: 0 auto;
 }
 .card-desc {
   color: white;
   padding: 2px 16px;
 }
- 
+
 .card-desc p {
- 
- padding: .8rem 0;
+  padding: 0.8rem 0;
 }
- 
+
 .select-btn {
   margin: 0.8rem;
   padding: 0.4rem 4rem;
@@ -137,6 +138,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  padding: 1.2rem;
   /* padding: 0 3.4rem; */
 }
 
@@ -147,21 +149,34 @@ main {
   padding: 2.4rem;
   color: white;
 }
+#noplayer {
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.7;
+}
 .selection-container h3 {
   margin: 0.6rem 0;
   text-align: center;
 }
 .calculation-container {
   background-color: var(--bg-secondary);
-  height: 70%;
+  height: auto;
   width: 100%;
   padding: 2.4rem;
   color: white;
 }
 /* calc insider */
+.field-box {
+  padding: 0.4rem;
+  margin: 0 auto;
+}
 #plExp {
   margin-top: 0.8rem;
   margin-bottom: 1.6rem;
+}
+
+#CostTotal {
+  margin: 1rem 0;
 }
 .calc-btn {
   padding: 0.4rem 1.8rem;
