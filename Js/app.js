@@ -21,8 +21,8 @@ const players = [];
 // function to select players
 function addPlayers(button) {
     //    disabling btn
-    button.setAttribute("disabled", "");
-    button.style.backgroundColor = 'rgba(180, 176, 176, 0.2)';
+    // button.setAttribute("disabled", "");
+    // button.style.backgroundColor = 'rgba(180, 176, 176, 0.2)';
     // accessing trhe elements
     const plName = (button.parentNode.children[0].innerText);
     noplayerlabel.style.display = "none";
@@ -31,6 +31,8 @@ function addPlayers(button) {
 
     // condition for maximum 5 players
     if (players.length <= 5) {
+        button.setAttribute("disabled", "");
+        button.style.backgroundColor = 'rgba(180, 176, 176, 0.2)';
         const pltotal = document.getElementById('total-players');
         pltotal.innerText = `Selected  ->  ${players.length} ✅`;
         // upading list dynamically
