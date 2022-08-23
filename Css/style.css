@@ -15,6 +15,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 html,
@@ -92,13 +93,13 @@ header .right_pic {
 /* main */
 
 main {
-  margin-top: 4rem;
+  margin: 4rem 0;
   display: flex;
   justify-content: space-evenly;
 }
 
 .cards-panel {
-  padding: 0.2rem;
+  padding: 0.8rem;
 }
 .selection-panel {
   padding: 2rem;
